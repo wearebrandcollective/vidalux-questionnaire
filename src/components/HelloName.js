@@ -25,15 +25,16 @@ const HelloName = props => {
       {!props.inputName ? (
         <div>
           <div>Hi There!</div>
-          <img className='HelloImage' src={qLoading} alt='' />
+          {/* <img className='HelloImage' src={qLoading} alt='' /> */}
         </div>
       ) : (
         <FadeIn>
-          {'Hi ' +
+          {'Hi ' + props.inputName}
+          {/* <img className='HelloImage' src={qLoading} alt='' /> */}
+          {/* {'Hi ' +
             props.inputName +
             ', hope you’re having a ' +
-            renderTimeOfTheDay()}
-          <img className='HelloImage' src={qLoading} alt='' />
+            renderTimeOfTheDay()} */}
         </FadeIn>
       )}
     </h4>
