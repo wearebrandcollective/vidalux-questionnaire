@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/vidalux-questionnaire/static/css/2.e60d307e.chunk.css"
   },
   {
-    "revision": "58e565772aa46336f43b6350359a2cf5",
+    "revision": "7a05a643c08645040c0dfa2e771e3542",
     "url": "/vidalux-questionnaire/index.html"
   }
 ];
