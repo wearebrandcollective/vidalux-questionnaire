@@ -1,0 +1,419 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: 'Abel', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(240, 232, 222) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: sans-serif;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 3px;
+}
+
+/* Result Component */
+.result {
+  padding: 1.5rem 2.5rem;
+}
+
+/* Quiz Component */
+.answerOptions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+/* QuestionCount Component */
+.questionCount {
+  padding: 1.5rem 2.5rem 0;
+  font-size: 14px;
+}
+
+/* Question Component */
+.question {
+  margin: 0;
+  padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+}
+
+/* AnswerOption Component */
+.answerOption {
+  /* border-top: 1px solid #eee; */
+  display: flex;
+}
+
+.answerOption:hover .underImageh6 {
+  color: black;
+}
+
+.answerOption:hover {
+  /* background-color: #eefbfe; */
+  border-radius: 10px;
+}
+
+.radioCustomButton {
+  position: absolute;
+  width: auto;
+  opacity: 0;
+}
+
+.radioCustomButton,
+.radioCustomLabel {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radioCustomLabel {
+  position: relative;
+  width: 200px;
+  /* margin: 0; */
+  margin-right: 20px;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+.radioCustomLabel:hover h6 {
+  color: white;
+}
+
+.radioCustomLabel:hover {
+  color: white;
+  position: relative;
+  width: 200px;
+  /* margin: 0; */
+  margin-right: 20px;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: gray;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.radioCustomButton ~ .radioCustomLabel:before {
+  position: absolute;
+  top: 20px;
+  left: 38px;
+  width: 28px;
+  height: 28px;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.radioCustomButton:checked ~ .radioCustomLabel:before {
+  content: '';
+  background: #8bc53f url(./svg/icon-check.svg) no-repeat;
+  background-size: 27px;
+  border-color: #8bc53f;
+}
+
+/* Animation */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.fade-leave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  /* background-color: #69f0ae; */
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* developing purpose, gives div a structure to segment */
+.datato {
+  position: absolute;
+  bottom: 0vh;
+}
+
+/* ul#horizontal-list {
+  min-width: 696px;
+  list-style: none;
+  justify-content: space-evenly;
+}
+ul#horizontal-list li {
+  display: inline;
+} */
+/* HACK / FIX */
+#Neutral {
+  display: none;
+}
+#Jackpot {
+  display: none;
+}
+#_250mg_Tincture_500mg_Tincture {
+  display: none;
+}
+#Premium_Package_3_products_curcumin_500mg_tincture_melatonin {
+  display: none;
+}
+#CbdPackage2 {
+  display: none;
+}
+#PREDETERMINEDANSWER {
+  display: none;
+}
+#Standard_Package_3_products_softgels_250mg_tincture_melatonin {
+  display: none;
+}
+
+.ReactModal__Content ReactModal__Content--after-open {
+  border-radius: 0px;
+}
+/* ^^ HACK / FIX ^^ */
+
+.bgf {
+  background-color: rgb(240, 232, 222);
+  padding-top: 30px;
+}
+.thethethe {
+  padding-top: 0px;
+}
+
+.beforeBuy:hover {
+  cursor: pointer;
+}
+.beforeBuy {
+  max-width: 976px;
+}
+.correctWidthOfTheButton {
+  padding-right: 40%;
+  padding-left: 40%;
+}
+.correctWidthOfTheButton2 {
+  padding-right: 30%;
+  padding-left: 30%;
+}
+.correctHeightForTheInputs {
+  height: 76px !important;
+}
+.noBorderForMyInput {
+  border: none !important;
+}
+.myGenderButtons {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 1.5rem 2rem 1.4rem 2rem;
+  border-radius: 10px;
+}
+
+.resizingSomeProduct {
+  /* width: 20vh; */
+  border-radius: 10px;
+}
+.myHtmlHack {
+  position: relative;
+  top: 165px;
+  margin-left: 0px;
+  color: black;
+}
+
+.myHtmlHack2 {
+  position: relative;
+  top: 35px;
+  color: black;
+}
+.questionHeading {
+  font-size: 41px;
+  color: #514945;
+  letter-spacing: 0.73px;
+  text-align: center;
+  line-height: 52px;
+}
+.answerHeadings {
+  font-size: 25px;
+  color: #000000;
+  letter-spacing: 0.46px;
+  text-align: center;
+  line-height: 33px;
+  margin-left: -10px;
+}
+.resultHeading {
+  font-size: 19px;
+  color: #000000;
+  letter-spacing: 0.34px;
+  text-align: center;
+  line-height: 33px;
+}
+.congratulations {
+  font-size: 41px;
+  color: #f0e8de;
+  letter-spacing: 0.73px;
+  text-align: center;
+  line-height: 52px;
+}
+.enterYourEmail {
+  font-size: 19.5px;
+  color: #f0e8de;
+  letter-spacing: 0.34px;
+  text-align: center;
+  line-height: 24.75px;
+}
+.marginTop200 {
+  margin-top: 80px;
+}
+.marginTop150 {
+  margin-top: 30px;
+}
+.buttonMargin {
+  margin-top: 40px;
+}
+.TODELETE {
+  font-size: 12px;
+}
+/* .maleSymb {
+  width: 37px;
+}
+.femaleSymb {
+  width: 32px;
+} */
+.genderBtnHover:hover {
+  background-color: gray;
+}
+.genderBtnHover:hover h6 {
+  color: white;
+}
+select.form-control {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+@media (max-width: 700px) {
+  .answerOptions {
+    display: unset !important;
+  }
+  .myHtmlHack3 {
+    margin-top: 50px;
+  }
+  .myHtmlHack2 {
+    margin-top: -40px;
+  }
+  .myHtmlHack {
+    top: 0px !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    margin: 2.5rem auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .correctWidthOfTheButton2 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .correctWidthOfTheButton {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  .mobileVerticalQuestions {
+    margin-left: 25%;
+    margin-top: 20px;
+  }
+  .mobileVerticalIntroQuestions {
+    margin-top: 0px;
+  }
+  .genderFemale {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+  .sob {
+    position: absolute;
+    left: 32% !important;
+    bottom: 7% !important;
+  }
+}
+.backBtn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+.backBtnPosition {
+  padding-top: 28% !important;
+}
+.backBtnPosition2 {
+  padding-top: 100px !important;
+}
+.backBtnPositionHello {
+  padding-top: 200px !important;
+}
+.HelloImage {
+  width: 200px;
+}
+.fadeMargin {
+  margin-top: 30px;
+}
+.personalizing {
+  font-size: 26px;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button:disabled {
+  background-color: white !important;
+  opacity: 10 !important;
+}
+.sob {
+  position: absolute;
+  left: 45%;
+  bottom: 7%;
+}
