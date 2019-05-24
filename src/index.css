@@ -417,3 +417,6 @@ button:disabled {
   left: 45%;
   bottom: 7%;
 }
+#hackFrame {
+  display: none !important;
+}

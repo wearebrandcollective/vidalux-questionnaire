@@ -288,6 +288,7 @@ class App extends Component {
           openModal={this.openModal}
           openModal2={this.openModal2}
         />
+        <iframe id='hackFrame' name='hackFrame' />
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -337,7 +338,7 @@ class App extends Component {
           </div> */}
           <form
             action='https://formkeep.com/f/606c5e2b4c66'
-            target='_blank'
+            target='hackFrame'
             acceptCharset='UTF-8'
             encType='multipart/form-data'
             method='POST'
@@ -383,7 +384,7 @@ class App extends Component {
           openModal={this.openModal}
           openModal2={this.openModal2}
         />
-
+        <iframe id='hackFrame' name='hackFrame' />
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -433,7 +434,7 @@ class App extends Component {
           </div> */}
           <form
             action='https://formkeep.com/f/606c5e2b4c66'
-            target='_blank'
+            target='hackFrame'
             acceptCharset='UTF-8'
             encType='multipart/form-data'
             method='POST'
