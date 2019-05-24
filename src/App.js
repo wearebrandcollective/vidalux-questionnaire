@@ -248,12 +248,12 @@ class App extends Component {
         modalIsOpen: true,
         modalIsOpen2: true
       });
-      // const segment = `name: ${this.state.inputName} age: ${
-      //   this.state.inputAge
-      // } gender: ${this.state.inputGender} state: ${
-      //   this.state.inputUSState
-      // } email: ${this.state.inputEmail}`;
-      // window.analytics.track(segment);
+      const segment = `name: ${this.state.inputName} age: ${
+        this.state.inputAge
+      } gender: ${this.state.inputGender} state: ${
+        this.state.inputUSState
+      } email: ${this.state.inputEmail}`;
+      window.analytics.track(segment);
     } else {
       this.setState({
         result: 'Standard_Package_3_products_softgels_250mg_tincture_melatonin',
@@ -311,11 +311,11 @@ class App extends Component {
             Congrats! You've taken the first step into your wellness journey.
           </h4>
           <h6 className='text-center enterYourEmail mt-5'>
-            Enter your email to get your results and receive a 15% discount on
+            Enter your email to get your results and receive a 10% discount on
             your order.
           </h6>
 
-          <div className='input-group input-group-lg mb-3 correctWidthOfTheButton2 mt-5'>
+          {/* <div className='input-group input-group-lg mb-3 correctWidthOfTheButton2 mt-5'>
             <input
               type='email'
               className='form-control noBorderForMyInput correctHeightForTheInputs widerEmailInput'
@@ -334,7 +334,36 @@ class App extends Component {
                 <img src={arrow} alt='>' />
               </button>
             </div>
-          </div>
+          </div> */}
+          <form
+            action='https://formkeep.com/f/606c5e2b4c66'
+            acceptCharset='UTF-8'
+            encType='multipart/form-data'
+            method='POST'
+          >
+            <div className='input-group input-group-lg mb-3 correctWidthOfTheButton2 mt-5'>
+              <input type='hidden' name='utf8' value='✓' />
+
+              <input
+                className='form-control noBorderForMyInput correctHeightForTheInputs widerEmailInput'
+                type='email'
+                id='email-address'
+                name='email'
+                onChange={this.handleChange5}
+                onFocus={e => (e.target.placeholder = '')}
+                onBlur={e => (e.target.placeholder = '')}
+              />
+              <div className='input-group-append '>
+                <button
+                  type='submit'
+                  className='btn bg-white noBorderForMyInput'
+                  disabled={!this.state.inputEmail}
+                >
+                  <img src={arrow} alt='>' />
+                </button>
+              </div>
+            </div>
+          </form>
         </Modal>
       </div>
     );
@@ -375,11 +404,11 @@ class App extends Component {
             Congrats! You've taken the first step into your wellness journey.
           </h4>
           <h6 className='text-center enterYourEmail mt-5'>
-            Enter your email to get your results and receive a 15% discount on
+            Enter your email to get your results and receive a 10% discount on
             your order.
           </h6>
 
-          <div className='input-group input-group-lg mb-3 correctWidthOfTheButton2 mt-5'>
+          {/* <div className='input-group input-group-lg mb-3 correctWidthOfTheButton2 mt-5'>
             <input
               type='email'
               className='form-control noBorderForMyInput correctHeightForTheInputs widerEmailInput'
@@ -390,7 +419,7 @@ class App extends Component {
             />
             <div className='input-group-append '>
               <button
-                className='btn  bg-white noBorderForMyInput'
+                className='btn bg-white noBorderForMyInput'
                 type='button'
                 onClick={this.closeModal}
                 disabled={!this.state.inputEmail}
@@ -398,7 +427,36 @@ class App extends Component {
                 <img src={arrow} alt='>' />
               </button>
             </div>
-          </div>
+          </div> */}
+          <form
+            action='https://formkeep.com/f/606c5e2b4c66'
+            acceptCharset='UTF-8'
+            encType='multipart/form-data'
+            method='POST'
+          >
+            <div className='input-group input-group-lg mb-3 correctWidthOfTheButton2 mt-5'>
+              <input type='hidden' name='utf8' value='✓' />
+
+              <input
+                className='form-control noBorderForMyInput correctHeightForTheInputs widerEmailInput'
+                type='email'
+                id='email-address'
+                name='email'
+                onChange={this.handleChange5}
+                onFocus={e => (e.target.placeholder = '')}
+                onBlur={e => (e.target.placeholder = '')}
+              />
+              <div className='input-group-append '>
+                <button
+                  type='submit'
+                  className='btn bg-white noBorderForMyInput'
+                  disabled={!this.state.inputEmail}
+                >
+                  <img src={arrow} alt='>' />
+                </button>
+              </div>
+            </div>
+          </form>
         </Modal>
 
         <Modal
