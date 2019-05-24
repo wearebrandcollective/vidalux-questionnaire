@@ -1,31 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "6b845d87e47ac680134594364dc9742a",
-    "url": "/static/media/arrow.6b845d87.svg"
+    "revision": "23ca50eb5e9fcd195042",
+    "url": "/static/css/main.7caa2a44.chunk.css"
   },
   {
-    "revision": "9d327d5a1c9ad3b742b6",
-    "url": "/static/css/main.6e0d3f2f.chunk.css"
+    "revision": "23ca50eb5e9fcd195042",
+    "url": "/static/js/main.83fc9a3c.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "4cffa739f751f90686ec3ac6e9b56e0d",
-    "url": "/static/media/icon-check.4cffa739.svg"
+    "revision": "36122323efbf4fbbf67a",
+    "url": "/static/css/2.e60d307e.chunk.css"
   },
   {
-    "revision": "ef31e51a5199c7ace2d7",
-    "url": "/static/js/2.19c162bc.chunk.js"
+    "revision": "36122323efbf4fbbf67a",
+    "url": "/static/js/2.4907bd7e.chunk.js"
   },
   {
     "revision": "86fe4afd3ae622f6d2f3bae2f2724802",
     "url": "/static/media/arrowBack.86fe4afd.svg"
   },
   {
-    "revision": "9d327d5a1c9ad3b742b6",
-    "url": "/static/js/main.0254954f.chunk.js"
+    "revision": "6b845d87e47ac680134594364dc9742a",
+    "url": "/static/media/arrow.6b845d87.svg"
   },
   {
     "revision": "cb570aa9e5d3f3d8dc91146c0d2b6383",
@@ -40,11 +40,11 @@ self.__precacheManifest = [
     "url": "/static/media/VidaluxLogoDark.02dbead5.svg"
   },
   {
-    "revision": "ef31e51a5199c7ace2d7",
-    "url": "/static/css/2.e60d307e.chunk.css"
+    "revision": "4cffa739f751f90686ec3ac6e9b56e0d",
+    "url": "/static/media/icon-check.4cffa739.svg"
   },
   {
-    "revision": "7fbfa3230e9c84da685beed1ed38099b",
+    "revision": "6b13e4c34c6f3baf8177659bc70d098f",
     "url": "/index.html"
   }
 ];
