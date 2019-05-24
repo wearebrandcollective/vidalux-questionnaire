@@ -34,7 +34,7 @@ const BeginQuestions = props => {
         ref={el => (reactSwipeEl = el)}
       >
         {/* -=-=-=-=-=-=-=-=-=-= Q1 */}
-        <div>
+        {/* <div>
           <h4 className='text-center questionHeading marginTop200 mobileVerticalIntroQuestions'>
             Before we begin, what's your name?
           </h4>
@@ -60,17 +60,17 @@ const BeginQuestions = props => {
               </div>
             </div>
           </form>
-        </div>
+        </div> */}
 
         {/* -=-=-=-=-=-=-=-=-=-= QHELLO */}
 
-        <div>
+        {/* <div>
           <HelloName inputName={props.inputName} />
-        </div>
+        </div> */}
 
         {/* -=-=-=-=-=-=-=-=-=-= Q2 */}
 
-        <div>
+        {/* <div>
           <h4 className='text-center questionHeading marginTop200 mobileVerticalIntroQuestions'>
             What’s your age?
           </h4>
@@ -102,11 +102,11 @@ const BeginQuestions = props => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* -=-=-=-=-=-=-=-=-=-= Q3 */}
 
-        <div className='text-center'>
+        {/* <div className='text-center'>
           <h1 className='questionHeading marginTop200 mobileVerticalIntroQuestions'>
             Which gender do you identify as?
           </h1>
@@ -154,7 +154,7 @@ const BeginQuestions = props => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* -=-=-=-=-=-=-=-=-=-= Q4 */}
         <div>

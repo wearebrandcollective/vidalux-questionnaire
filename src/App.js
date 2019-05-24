@@ -337,9 +337,11 @@ class App extends Component {
           </div> */}
           <form
             action='https://formkeep.com/f/606c5e2b4c66'
+            target='_blank'
             acceptCharset='UTF-8'
             encType='multipart/form-data'
             method='POST'
+            onSubmit={this.closeModal}
           >
             <div className='input-group input-group-lg mb-3 correctWidthOfTheButton2 mt-5'>
               <input type='hidden' name='utf8' value='✓' />
@@ -359,6 +361,7 @@ class App extends Component {
                   className='btn bg-white noBorderForMyInput'
                   disabled={!this.state.inputEmail}
                 >
+                  TODO:
                   <img src={arrow} alt='>' />
                 </button>
               </div>
@@ -430,9 +433,11 @@ class App extends Component {
           </div> */}
           <form
             action='https://formkeep.com/f/606c5e2b4c66'
+            target='_blank'
             acceptCharset='UTF-8'
             encType='multipart/form-data'
             method='POST'
+            onSubmit={this.closeModal}
           >
             <div className='input-group input-group-lg mb-3 correctWidthOfTheButton2 mt-5'>
               <input type='hidden' name='utf8' value='✓' />
@@ -452,6 +457,7 @@ class App extends Component {
                   className='btn bg-white noBorderForMyInput'
                   disabled={!this.state.inputEmail}
                 >
+                  TODO:
                   <img src={arrow} alt='>' />
                 </button>
               </div>
@@ -620,13 +626,19 @@ class App extends Component {
   }
 
   closeModal() {
-    this.setState({ modalIsOpen: false });
-    const segment = `name: ${this.state.inputName} age: ${
-      this.state.inputAge
-    } gender: ${this.state.inputGender} state: ${
-      this.state.inputUSState
-    } other: ${this.state.inputOther} email: ${this.state.inputEmail}`;
-    window.analytics.track(segment);
+    setTimeout(
+      function() {
+        this.setState({ modalIsOpen: false });
+      }.bind(this),
+      0
+    );
+    // this.setState({ modalIsOpen: false });
+    // const segment = `name: ${this.state.inputName} age: ${
+    //   this.state.inputAge
+    // } gender: ${this.state.inputGender} state: ${
+    //   this.state.inputUSState
+    // } other: ${this.state.inputOther} email: ${this.state.inputEmail}`;
+    // window.analytics.track(segment);
   }
 
   openModal2() {
