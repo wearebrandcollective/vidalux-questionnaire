@@ -1,23 +1,23 @@
 import React from 'react';
 import FadeIn from 'react-fade-in';
 
-import qLoading from '../svg/qLoading.svg';
+// import qLoading from '../svg/qLoading.svg';
 
-const renderTimeOfTheDay = (currentTime = new Date()) => {
-  const currentHour = currentTime.getHours();
-  const splitAfternoon = 12; // 24hr time to split the afternoon
-  const splitEvening = 17; // 24hr time to split the evening
+// const renderTimeOfTheDay = (currentTime = new Date()) => {
+//   const currentHour = currentTime.getHours();
+//   const splitAfternoon = 12; // 24hr time to split the afternoon
+//   const splitEvening = 17; // 24hr time to split the evening
 
-  if (currentHour >= splitAfternoon && currentHour <= splitEvening) {
-    // Between 12 PM and 5PM
-    return 'great afternoon!';
-  } else if (currentHour >= splitEvening) {
-    // Between 5PM and Midnight
-    return 'great evening!';
-  }
-  // Between dawn and noon
-  return 'great morning!';
-};
+//   if (currentHour >= splitAfternoon && currentHour <= splitEvening) {
+//     // Between 12 PM and 5PM
+//     return 'great afternoon!';
+//   } else if (currentHour >= splitEvening) {
+//     // Between 5PM and Midnight
+//     return 'great evening!';
+//   }
+//   // Between dawn and noon
+//   return 'great morning!';
+// };
 
 const HelloName = props => {
   return (
