@@ -337,7 +337,7 @@ class App extends Component {
             </div>
           </div> */}
           <form
-            action='https://formkeep.com/f/54d28c0127e8'
+            action='https://formkeep.com/f/606c5e2b4c66'
             target='hackFrame'
             acceptCharset='UTF-8'
             encType='multipart/form-data'
@@ -362,7 +362,6 @@ class App extends Component {
                   className='btn bg-white noBorderForMyInput'
                   disabled={!this.state.inputEmail}
                 >
-                  TODO:
                   <img src={arrow} alt='>' />
                 </button>
               </div>
@@ -433,7 +432,7 @@ class App extends Component {
             </div>
           </div> */}
           <form
-            action='https://formkeep.com/f/54d28c0127e8'
+            action='https://formkeep.com/f/606c5e2b4c66'
             target='hackFrame'
             acceptCharset='UTF-8'
             encType='multipart/form-data'
@@ -458,7 +457,6 @@ class App extends Component {
                   className='btn bg-white noBorderForMyInput'
                   disabled={!this.state.inputEmail}
                 >
-                  TODO:
                   <img src={arrow} alt='>' />
                 </button>
               </div>
