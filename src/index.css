@@ -417,6 +417,11 @@ button:disabled {
   left: 45%;
   bottom: 7%;
 }
+@media (max-width: 769px) {
+  .sob {
+    display: none;
+  }
+}
 #hackFrame {
   display: none !important;
 }
