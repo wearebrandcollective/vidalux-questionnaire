@@ -19,6 +19,8 @@ const BeginQuestions = props => {
   let reactSwipeEl;
 
   const swipeNowAndAutoSwipeNext = () => {
+    const myWindow = window.open('', 'myWindow', 'width=200,height=100');
+    myWindow.close();
     reactSwipeEl.next();
     setTimeout(() => {
       const AutoSwipeNext = () => reactSwipeEl.next();

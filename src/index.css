@@ -425,3 +425,7 @@ button:disabled {
 #hackFrame {
   display: none !important;
 }
+form {
+  target-name: new;
+  target-new: tab;
+}
