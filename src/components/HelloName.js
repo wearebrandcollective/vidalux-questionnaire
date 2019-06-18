@@ -10,7 +10,7 @@ import FadeIn from 'react-fade-in';
 
 //   if (currentHour >= splitAfternoon && currentHour <= splitEvening) {
 //     // Between 12 PM and 5PM
-//     return 'great afternoon!';
+//     return ' afternoon!';
 //   } else if (currentHour >= splitEvening) {
 //     // Between 5PM and Midnight
 //     return 'great evening!';
