@@ -652,7 +652,25 @@ class App extends Component {
 
   enterCardDetailsClick() {
     // this.setState({ enterCardDetails: true });
-    window.location.replace('https://www.vidalux.com/');
+
+    if (
+      this.state.result ===
+      'Premium_Package_3_products_curcumin_500mg_tincture_melatonin'
+    ) {
+      window.location.replace('https://www.vidalux.com/product/premium-pack/');
+    }
+    if (
+      this.state.result ===
+      'Standard_Package_3_products_softgels_250mg_tincture_melatonin'
+    ) {
+      window.location.replace('https://www.vidalux.com/product/starter-pack/');
+    }
+    if (this.state.result === '_250mg_Tincture_500mg_Tincture') {
+      window.location.replace('https://www.vidalux.com/product/starter-pack/');
+    }
+    if (this.state.result === 'PREDETERMINEDANSWER') {
+      window.location.replace('https://www.vidalux.com/product/starter-pack/');
+    }
   }
 
   render() {
