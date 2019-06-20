@@ -133,27 +133,8 @@ class App extends Component {
       animation: quizQuestions[0].animation,
       answerOptions: shuffledAnswerOptions[0]
     });
-    const renderTimeOfTheDay = (currentTime = new Date()) => {
-      const currentHour = currentTime.getHours();
-      const splitAfternoon = 12; // 24hr time to split the afternoon
-      const splitEvening = 17; // 24hr time to split the evening
 
-      if (currentHour >= splitAfternoon && currentHour <= splitEvening) {
-        // Between 12 PM and 5PM
-        return 'Good afternoon!';
-      } else if (currentHour >= splitEvening) {
-        // Between 5PM and Midnight
-        return 'Good evening!';
-      }
-      // Between dawn and noon
-      return 'Good morning!';
-    };
-
-    console.log(
-      '%c%s',
-      'color:red; background:blue; font-size: 20pt',
-      renderTimeOfTheDay()
-    );
+    console.log('%c%s', 'color:red; background:blue; font-size: 10pt', '::');
   }
 
   shuffleArray(array) {
